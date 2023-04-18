@@ -26471,6 +26471,10 @@ blockquote.team-quote .quote {
   justify-content: center;
 }
 
+.card-height {
+  height: 360px;
+}
+
 .my-image {
   width: 100% !important;
   height: 100% !important;
