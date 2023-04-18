@@ -31898,7 +31898,7 @@ section.shadow,
 .screenshots .swiper-container .swiper-slide {
   -webkit-transform: scale(0.75);
   transform: scale(0.75);
-  opacity: 0.6;
+  /* opacity: 0.6; */
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -31913,7 +31913,7 @@ section.shadow,
 .screenshots .swiper-container .swiper-slide-next {
   -webkit-transform: scale(0.85);
   transform: scale(0.85);
-  opacity: 0.85;
+  /* opacity: 0.85; */
 }
 
 .screenshots .swiper-container .swiper-slide-active {

@@ -1,11 +1,11 @@
 "use strict";
 
-(function($) {
-  $(function() {
+(function ($) {
+  $(function () {
     /**
      * Swiper Initialization
      **/
-    $(".swiper-container").each(function() {
+    $(".swiper-container").each(function () {
       var $this = $(this);
       var boolData = {
         breakpoints: $this.data("sw-breakpoints"),
@@ -16,7 +16,7 @@
         centered: $this.data("sw-centered-slides"),
         pagination: $this.data("sw-pagination"),
         nav_arrows: $this.data("sw-nav-arrows"),
-        dynamicBullets: $this.data("sw-dynamic-bullets")
+        dynamicBullets: $this.data("sw-dynamic-bullets"),
       };
 
       var breakPoints = boolData.breakpoints || false;
@@ -56,10 +56,10 @@
                 depth: 0,
                 modifier: 1,
                 rotate: 0,
-                slideShadows: false
+                slideShadows: false,
               },
               boolData.cover_flow
-            )
+            ),
           }
         : {};
 
@@ -67,9 +67,9 @@
         ? {
             autoplay: {
               delay: auto_play,
-              disableOnIteration: false
+              disableOnIteration: false,
             },
-            speed: speed
+            speed: speed,
           }
         : {};
 
@@ -78,7 +78,7 @@
       if (paginationCss) {
         pagination.pagination = {
           el: paginationCss,
-          clickable: true
+          clickable: true,
         };
 
         /* if (dynamicBullets) {
@@ -89,7 +89,7 @@
       if (navigationCss) {
         pagination.navigation = {
           nextEl: navigationCss + "-next",
-          prevEl: navigationCss + "-prev"
+          prevEl: navigationCss + "-prev",
         };
       }
 
@@ -98,7 +98,7 @@
       /**/ if (navigationElement) {
         //console.log("navigationElement swiper", navigationElement);
         events = {
-          transitionEnd: function() {
+          transitionEnd: function () {
             if (!navigationElement) return;
 
             var $navigationElement = $(navigationElement);
@@ -124,7 +124,7 @@
                 $navigationElement
               ).addClass(navigationActiveClass);
             }
-          }
+          },
         };
       } /**/
 
@@ -137,7 +137,7 @@
           breakpoints: breakPoints,
           slidesPerView: showItems,
           parallax: true,
-          effect: effect
+          effect: effect,
         },
         pagination,
         autoplay,
@@ -152,7 +152,7 @@
       }
 
       if (navigationElement) {
-        $(navigationElement).on("click", ".nav-item", function(evt) {
+        $(navigationElement).on("click", ".nav-item", function (evt) {
           evt.preventDefault();
 
           var $item = $(this);
@@ -170,7 +170,7 @@
           swiper.slideTo(index);
 
           if (navigationActiveSelector) {
-            $item.siblings().each(function() {
+            $item.siblings().each(function () {
               $(navigationActiveSelector, this).removeClass(
                 navigationActiveClass
               );
@@ -189,7 +189,7 @@
       }
     });
 
-    $(".scroll-bar").each(function(i, e) {
+    $(".scroll-bar").each(function (i, e) {
       var bar = new SimpleBar(e);
     });
   });
