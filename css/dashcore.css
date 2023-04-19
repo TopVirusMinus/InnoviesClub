@@ -33516,6 +33516,15 @@ section.shadow,
   }
 }
 
+.main-background {
+  min-height: 100vh;
+  background-image: url("../img/screens/dash/laptop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: right top;
+}
+
 .automate-social-header .bubbles-wrapper .bubble:nth-child(1) {
   -webkit-animation: floating 3.33333s ease-in-out infinite alternate;
   animation: floating 3.33333s ease-in-out infinite alternate;
