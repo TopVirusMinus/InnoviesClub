@@ -702,7 +702,16 @@ progress {
   margin-right: auto;
   margin-left: auto;
 }
+@media (max-width: 768px) {
+  .display-sm-none {
+    display: none !important;
+  }
 
+  .display-sm-block {
+    display: block !important;
+  }
+
+}
 @media (min-width: 576px) {
   .container,
   .container-sm {
@@ -5752,6 +5761,10 @@ fieldset:disabled .btn {
 
 .tab-content > .active {
   display: block;
+}
+
+.tab-pane {
+  height: auto;
 }
 
 .navbar {
@@ -26471,8 +26484,16 @@ blockquote.team-quote .quote {
   justify-content: center;
 }
 
+.card-height-sm {
+  height: 300px;
+}
+
 .card-height {
   height: 360px;
+}
+
+.card-height-lg {
+  height: 500px;
 }
 
 .my-image {
@@ -26545,6 +26566,10 @@ blockquote.team-quote .quote {
 
 .transparentize {
   opacity: 0.035;
+}
+
+.bgTransparentize {
+  background-color: transparent;
 }
 
 .shape-left {
@@ -33534,6 +33559,19 @@ section.shadow,
   background-position: center;
 }
 
+.consultant-bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url("../img/services/other/consultant.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 @media (min-width: 1400px) {
   .background-image {
     background-position: right top;
@@ -33551,6 +33589,15 @@ section.shadow,
     background-color: rgba(0, 0, 0, 0.5);
     isolation: isolate;
   }
+}
+
+.list-group-item {
+  border: none;
+  background-color: transparent;
+}
+
+.list-group-item h5 {
+  margin-bottom: 0.5rem;
 }
 
 .automate-social-header .bubbles-wrapper .bubble:nth-child(1) {
