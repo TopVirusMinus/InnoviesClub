@@ -33517,12 +33517,40 @@ section.shadow,
 }
 
 .main-background {
+  position: relative;
   min-height: 100vh;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
   background-image: url("../img/screens/dash/laptop.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-position: right top;
+}
+
+@media (min-width: 1400px) {
+  .background-image {
+    background-position: right top;
+  }
+}
+
+@media (max-width: 1400px) {
+  .background-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    isolation: isolate;
+  }
 }
 
 .automate-social-header .bubbles-wrapper .bubble:nth-child(1) {
