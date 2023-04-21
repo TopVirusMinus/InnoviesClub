@@ -6220,10 +6220,10 @@ fieldset:disabled .btn {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #ffffff;
+  background-color: #fff;
   background-clip: border-box;
   border: 1px solid #f1f4f8;
-  border-radius: 0.25rem;
+  border-radius: 10px;
 }
 
 .card > hr {
