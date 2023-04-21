@@ -108,6 +108,7 @@ body {
   background-color: #ffffff;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(22, 28, 45, 0);
+  background-color: #f1f4f8;
 }
 
 hr {
@@ -710,7 +711,6 @@ progress {
   .display-sm-block {
     display: block !important;
   }
-
 }
 @media (min-width: 576px) {
   .container,
@@ -23891,12 +23891,17 @@ textarea.form-control.form-control-rounded {
   right: 0;
 }
 
+.wavy-svg {
+  width: 100%;
+  height: auto;
+}
+
 .shape-divider {
-  position: absolute;
   pointer-events: none;
 }
 
 .shape-divider-bottom {
+  top: -20%;
   right: 0;
   bottom: 0;
   left: 0;
@@ -23928,8 +23933,8 @@ textarea.form-control.form-control-rounded {
 
 .shape-divider svg {
   fill: currentColor;
-  -webkit-transform: scale(2);
-  transform: scale(2);
+  -webkit-transform: scale(1);
+  transform: scale(1);
 }
 
 .gradient {
