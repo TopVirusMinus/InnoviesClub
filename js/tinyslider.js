@@ -37,13 +37,7 @@ function initializeSlider(visibleItems) {
         },
         640: { 
             items: 3,
-        },
-        480: {
-            items: 2,
-        },
-        320: { // Screen width: 320px
-            items: 1,
-        },
+        }
     },
     });
 }
