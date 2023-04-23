@@ -26490,15 +26490,15 @@ blockquote.team-quote .quote {
 }
 
 .card-height-sm {
-  height: 300px;
+  min-height: 300px;
 }
 
 .card-height {
-  height: 360px;
+  min-height: 360px;
 }
 
 .card-height-lg {
-  height: 500px;
+  min-height: 500px;
 }
 
 .my-image {
