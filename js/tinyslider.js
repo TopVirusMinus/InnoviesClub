@@ -35,7 +35,7 @@ function initializeSlider(visibleItems) {
         1000: { 
             items: 5,
         },
-        640: { 
+        480: { 
             items: 3,
         }
     },
