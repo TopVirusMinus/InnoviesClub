@@ -26502,10 +26502,10 @@ blockquote.team-quote .quote {
 }
 
 .my-image {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: contain !important;
-  object-position: center !important;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
 }
 
 /* 2.8 Responsive ======================================================= */

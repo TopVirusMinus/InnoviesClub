@@ -9004,9 +9004,9 @@
     name: 'autoplay',
     params: {
       autoplay: {
-        enabled: false,
-        delay: 3000,
-        waitForTransition: true,
+        enabled: true,
+        delay: 0,
+        waitForTransition: false,
         disableOnInteraction: true,
         stopOnLastSlide: false,
         reverseDirection: false,
