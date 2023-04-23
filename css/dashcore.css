@@ -28928,7 +28928,34 @@ h6,
 
 /* ==========================================================================
     [6. ANIMATIONS]
-========================================================================== */
+============================================
+============================== */
+.tns-outer {
+    overflow: visible;
+}
+
+.tns-inner {
+    overflow: visible;
+}
+
+.tns-item {
+    transition: none !important;
+}
+
+.slide{
+  animation-name: slide;
+  transform-origin: center;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
 @-webkit-keyframes fade-out {
   0% {
     opacity: 1;
