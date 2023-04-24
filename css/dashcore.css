@@ -26517,6 +26517,21 @@ blockquote.team-quote .quote {
   object-fit: contain;
 }
 
+
+.slick-slide {
+  height: 200px; /* Adjust the fixed height as needed */
+  display: flex;
+  align-items: center;
+  padding: 0 5px; /* Add padding to create a gap between the slides */
+}
+
+.slick-slide img {
+  max-height: 100%; /* Limit the height of the image to the height of the slide */
+  width: auto; /* Maintain the aspect ratio of the image */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+
 .image-container {
   display: flex;
   justify-content: center;
