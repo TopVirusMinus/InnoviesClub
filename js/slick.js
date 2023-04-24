@@ -6,6 +6,14 @@
       return 5; // Number of slides to show on larger screens
     }
   }
+  function getSlidesSpeed() {
+    // Adjust the screen width breakpoint if needed
+    if (window.innerWidth <= 768) {
+      return 1500; // Number of slides to show on mobile screens
+    } else {
+      return 2000; // Number of slides to show on larger screens
+    }
+  }
 
  jQuery(function () {
     $('.slick-slider').slick({
@@ -13,7 +21,7 @@
       autoplay: true,
       autoplaySpeed: 0,
       cssEase: 'linear',
-      speed: 800,
+      speed: getSlidesSpeed(),
       slidesToShow: getSlidesToShow(),
       slidesToScroll: 1,
       swipeToSlide: true,
@@ -30,7 +38,7 @@
         autoplay: true,
         autoplaySpeed: 0,
         cssEase: 'linear',
-        speed: 800,
+        speed: getSlidesSpeed(),
         slidesToShow: getSlidesToShow(),
         slidesToScroll: 1,
         swipeToSlide: true,
