@@ -35,15 +35,15 @@ function initializeSlider(visibleItems) {
         1000: { 
             items: 5,
         },
-        640: { 
+        480: { 
             items: 3,
         },
-        480: {
-            items: 2,
-        },
-        320: { // Screen width: 320px
-            items: 1,
-        },
+        // 480: {
+        //     items: 2,
+        // },
+        // 320: { // Screen width: 320px
+        //     items: 1,
+        // },
     },
     });
 }
