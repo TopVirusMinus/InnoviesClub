@@ -9,9 +9,9 @@
   function getSlidesSpeed() {
     // Adjust the screen width breakpoint if needed
     if (window.innerWidth <= 768) {
-      return 1500; // Number of slides to show on mobile screens
+      return 100; // Number of slides to show on mobile screens
     } else {
-      return 2000; // Number of slides to show on larger screens
+      return 100; // Number of slides to show on larger screens
     }
   }
 
@@ -19,7 +19,7 @@
     $('.slick-slider').slick({
       infinite: true,
       autoplay: true,
-      autoplaySpeed: 0,
+      autoplaySpeed: 1000,
       cssEase: 'linear',
       speed: getSlidesSpeed(),
       slidesToShow: getSlidesToShow(),
@@ -36,7 +36,7 @@
       $('.slick-slider').slick({
         infinite: true,
         autoplay: true,
-        autoplaySpeed: 0,
+        autoplaySpeed: 1000,
         cssEase: 'linear',
         speed: getSlidesSpeed(),
         slidesToShow: getSlidesToShow(),
