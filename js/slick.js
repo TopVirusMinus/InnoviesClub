@@ -19,7 +19,7 @@
     $('.slick-slider').slick({
       infinite: true,
       autoplay: true,
-      autoplaySpeed: 200,
+      autoplaySpeed: 1000,
       cssEase: 'linear',
       speed: getSlidesSpeed(),
       slidesToShow: getSlidesToShow(),
@@ -36,7 +36,7 @@
       $('.slick-slider').slick({
         infinite: true,
         autoplay: true,
-        autoplaySpeed: 200,
+        autoplaySpeed: 1000,
         cssEase: 'linear',
         speed: getSlidesSpeed(),
         slidesToShow: getSlidesToShow(),
